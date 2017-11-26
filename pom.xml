@@ -2,27 +2,25 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>APM1</groupId>
   <artifactId>APM1</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.0.1</version>
   
-<dependencies>
+	<dependencies>
 
-<!-- HAPI Java HL7 API Base Module -->
-  <dependency>
-    <groupId>ca.uhn.hapi</groupId>
-    <artifactId>hapi-base</artifactId>
-    <version>2.3</version>
-</dependency>
+		<!-- HAPI Java HL7 API Base Module -->
+  		<dependency>
+    		<groupId>ca.uhn.hapi</groupId>
+    		<artifactId>hapi-base</artifactId>
+    		<version>2.3</version>
+		</dependency>
 
-<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-structures-v21 -->
-<dependency>
-    <groupId>ca.uhn.hapi</groupId>
-    <artifactId>hapi-structures-v21</artifactId>
-    <version>2.3</version>
-</dependency>
+		<!-- https://mvnrepository.com/artifact/ca.uhn.hapi/hapi-structures-v21 -->
+		<dependency>
+    		<groupId>ca.uhn.hapi</groupId>
+    		<artifactId>hapi-structures-v21</artifactId>
+    		<version>2.3</version>
+		</dependency>
 
-
-
-  </dependencies>
+	</dependencies>
 
 </project>
 
