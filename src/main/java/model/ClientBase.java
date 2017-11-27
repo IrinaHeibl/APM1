@@ -175,7 +175,9 @@ public class ClientBase implements IClient {
 		sendMessageButton.addActionListener(new ActionListener() {
 			
 			public void actionPerformed(ActionEvent e) {
-				// TODO implement send message
+				IMessage message = new MessageBase();
+				sendMessage(message);
+				//TODO indicate message has been sent
 			}
 		});
 		serverMainPane.add(sendMessageButton, BorderLayout.SOUTH);

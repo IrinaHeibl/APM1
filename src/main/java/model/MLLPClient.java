@@ -1,7 +1,7 @@
 package model;
 
 import java.io.IOException;
-import java.io.InputStream;
+//import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 
@@ -22,7 +22,7 @@ public class MLLPClient extends ClientBase {
 			//add text message (string) to buffer
 			messageToTransmit.append(message.toString());
 			//input stream for notifications
-			InputStream inputStream = socket.getInputStream();
+			//InputStream inputStream = socket.getInputStream();
 			//output stream to send message
 			OutputStream outputStream = socket.getOutputStream();
 			//send message to server
