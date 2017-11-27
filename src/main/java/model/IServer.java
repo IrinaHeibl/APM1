@@ -19,5 +19,19 @@ public interface IServer {
 	 * @param IMessage message
 	 * @return
 	 */
-	public boolean sendMessage(String targetIp, IMessage message);
+	/**
+	 * accept incoming connection listening to server port
+	 * @return true upon success, false upon failure
+	 */
+	public boolean acceptIncomingConnection();
+	/**
+	 * handle incoming connection
+	 * @return true upon success, false upon failure
+	 */
+	public boolean handleIncomingConnection();
+	/**
+	 * send notification of received message to sender
+	 * @return true upon success, false upon failure
+	 */
+	public boolean sendNotification();
 }

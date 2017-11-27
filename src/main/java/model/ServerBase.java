@@ -15,7 +15,7 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class Server implements IServer {
+public class ServerBase implements IServer {
 
 	/*----------------------------
 	 * variables
@@ -38,7 +38,7 @@ public class Server implements IServer {
 	/**
 	 * default constructor, initialises gui
 	 */
-	public Server() {
+	public ServerBase() {
 		initGUI("");
 	}
 
@@ -46,7 +46,7 @@ public class Server implements IServer {
 	 * constructor, initialising gui
 	 * @param string guiName (window name - jframe)
 	 */
-	public Server(String guiName){
+	public ServerBase(String guiName){
 		if(guiName != null) initGUI(guiName);
 	}
 
@@ -256,9 +256,20 @@ public class Server implements IServer {
 		return true;
 	}
 
-	public boolean sendMessage(String targetIp, IMessage message) {
-		// TODO implement send message
+	public boolean acceptIncomingConnection() {
+		// TODO implement
 		return false;
 	}
+
+	public boolean handleIncomingConnection() {
+		// TODO implement
+		return false;
+	}
+
+	public boolean sendNotification() {
+		// TODO implement
+		return false;
+	}
+
 
 }
