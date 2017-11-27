@@ -160,10 +160,10 @@ public class ServerBase implements IServer {
 			public void itemStateChanged(ItemEvent e) {
 				if(e.getStateChange() == ItemEvent.SELECTED){
 					indicateServerStartup();
-					if(startServer()) indicateServerStarted();
+					acceptIncomingConnection();
 				}
 				if(e.getStateChange() == ItemEvent.DESELECTED){
-					if(stopServer()) indicateServerStopped();
+					indicateServerStopped();
 				}
 			}
 		});
@@ -239,35 +239,20 @@ public class ServerBase implements IServer {
 		statusServerTextField.setText("starting server");
 		serverAppFrame.repaint();
 	}
-	
-	/**
-	 * start server (empty per default)
-	 * @return true on success, false on failure (true per default)
-	 */
-	public boolean startServer() {
-		return true;
-	}
-	
-	/**
-	 * stop server (empty per default)
-	 * @return true on success, false on failure (true per default)
-	 */
-	public boolean stopServer() {
-		return true;
-	}
 
 	public boolean acceptIncomingConnection() {
-		// TODO implement
 		return false;
 	}
 
 	public boolean handleIncomingConnection() {
-		// TODO implement
 		return false;
 	}
 
 	public boolean sendNotification() {
-		// TODO implement
+		return false;
+	}
+
+	public boolean handleIncomingMessage(IMessage message) {
 		return false;
 	}
 

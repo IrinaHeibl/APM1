@@ -25,10 +25,10 @@ public interface IServer {
 	 */
 	public boolean acceptIncomingConnection();
 	/**
-	 * handle incoming connection
+	 * handle incoming message
 	 * @return true upon success, false upon failure
 	 */
-	public boolean handleIncomingConnection();
+	public boolean handleIncomingMessage(IMessage message);
 	/**
 	 * send notification of received message to sender
 	 * @return true upon success, false upon failure
