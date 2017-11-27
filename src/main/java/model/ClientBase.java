@@ -192,7 +192,6 @@ public class ClientBase implements IClient {
 	}
 	
 	public boolean sendMessage(IMessage message) {
-		// TODO Auto-generated method stub
 		return false;
 	}
 

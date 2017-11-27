@@ -1,11 +1,11 @@
 package main;
 
-import model.ClientBase;
+import model.MLLPClient;
 
 public class ClientMain {
 
 	public static void main(String[] args) {
-		ClientBase client = new ClientBase("MLLP Client");
+		MLLPClient client = new MLLPClient();
 	}
 
 }
